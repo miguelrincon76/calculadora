@@ -17,6 +17,11 @@ const routes = [
     component: ListarPersonajes
   },
   {
+    path: '/tabla',
+    name: 'tabla',
+    component: () => import(/* webpackChunkName: "tabla" */ '../views/tabla.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting

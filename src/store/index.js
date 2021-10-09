@@ -15,7 +15,7 @@ export default new Vuex.Store({
   actions: {
     async getPersonajes({commit}){
       //const peticion = await fetch('https://futuramaapi.herokuapp.com/api/v2/characters');
-      const peticion = await fetch('http://localhost:3000/users/');
+      const peticion = await fetch('http://localhost:3001/users/');
       const data = await peticion.json();
       console.log(data);
       commit('setPersonajes', data);
